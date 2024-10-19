@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url('images/bacground.png'); /* Set background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: rgba(244, 244, 244, 0.8); /* Slightly transparent background */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}

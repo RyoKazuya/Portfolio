@@ -59,9 +59,11 @@ body {
 .container {
     flex: 1; /* Allow the content to take the available space */
     padding: 20px;
-    background-color: #f8f9fa; /* Light background for content area */
+    background-image: url('images/bacground.png'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
     border: 1px solid #ddd; /* Optional border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Optional rounded corners */
 }
 
 /* Media Queries for Responsiveness */

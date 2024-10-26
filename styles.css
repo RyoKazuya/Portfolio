@@ -35,8 +35,8 @@ body {
     padding: 20px;
     background-color: #ffffff; /* Background color for the main content */
     max-width: 794px; /* A4 width */
-    max-height: 1123px; /* A4 height */
-    margin: auto; /* Center the main content */
+    min-height: 100vh; /* Ensures main content fills the height */
+    margin: 0; /* Remove margin to align with the sidebar */
     border: 1px solid #ddd; /* Optional border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }

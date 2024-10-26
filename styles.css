@@ -18,7 +18,7 @@ body {
 }
 
 .sidebar {
-    width: 300px; /* Increase width of sidebar */
+    width: 300px; /* Fixed width for the sidebar */
     background-color: #f4f4f4;
     padding: 20px;
 }
@@ -34,6 +34,11 @@ body {
     flex: 1; /* Takes up remaining space */
     padding: 20px;
     background-color: #ffffff; /* Ensure main content has a background */
+    max-width: 794px; /* A4 width */
+    max-height: 1123px; /* A4 height */
+    margin: auto; /* Center the main content */
+    border: 1px solid #ddd; /* Optional border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .header {
@@ -63,9 +68,7 @@ h1, h2, h3 {
 .container {
     min-height: 500px; /* Ensure the container has a minimum height */
     padding: 20px;
-    border: 1px solid #ddd; /* Optional: border for visual separation */
     background-color: #fff; /* Background for content area */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Media Queries for Responsiveness */

@@ -1,5 +1,3 @@
-/* styles.css */
-
 * {
     margin: 0;
     padding: 0;
@@ -19,15 +17,7 @@ body {
     background-color: #343a40; /* Dark background for sidebar */
     color: #ffffff; /* White text for sidebar */
     padding: 20px;
-    min-height: calc(100vh - 40px); /* Adjust as necessary based on your layout */
-}
-
-
-.profile-pic {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Circular image */
-    margin-bottom: 15px;
+    min-height: 100vh; /* Make sidebar full height of the viewport */
 }
 
 .main {
@@ -35,16 +25,15 @@ body {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     padding: 20px;
-    background-image: url('images/background.png');/* Background image */
+    background-image: url('images/background.png'); /* Background image */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     max-width: 210mm; /* A4 width */
     max-height: 297mm; /* A4 height */
-    margin: 0 auto; /* Center the main content */
+    margin: 0; /* Remove margin for proper alignment */
     border: 1px solid #ddd; /* Optional border */
     border-radius: 8px; /* Optional rounded corners */
 }
-
 
 .header {
     margin-bottom: 20px;
@@ -72,7 +61,6 @@ body {
     background-color: #f8f9fa; /* Light background for content area */
     border: 1px solid #ddd; /* Optional border */
     border-radius: 8px; /* Optional rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Media Queries for Responsiveness */
@@ -95,4 +83,3 @@ body {
         padding: 10px; /* Reduce padding for smaller screens */
     }
 }
-

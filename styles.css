@@ -12,7 +12,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
+    display: flex; /* Use flexbox for layout */
     flex-direction: row; /* Sidebar on the left and main content on the right */
     min-height: 100vh; /* Ensure it takes full height */
 }
@@ -39,6 +39,8 @@ body {
     margin: 0; /* Remove margin to align with the sidebar */
     border: 1px solid #ddd; /* Optional border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
 }
 
 .header {
@@ -66,6 +68,7 @@ h1, h2, h3 {
 }
 
 .container {
+    flex: 1; /* Allow the container to take up remaining space */
     min-height: 500px; /* Ensure the container has a minimum height */
     padding: 20px;
     background-color: #fff; /* Background for content area */

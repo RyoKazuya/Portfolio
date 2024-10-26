@@ -13,13 +13,13 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: row; /* Keep sidebar and main content side by side */
+    flex-direction: row; /* Sidebar on the left and main content on the right */
     min-height: 100vh; /* Ensure it takes full height */
 }
 
 .sidebar {
     width: 300px; /* Fixed width for the sidebar */
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Sidebar color */
     padding: 20px;
 }
 
@@ -33,7 +33,7 @@ body {
 .main {
     flex: 1; /* Takes up remaining space */
     padding: 20px;
-    background-color: #ffffff; /* Ensure main content has a background */
+    background-color: #ffffff; /* Background color for the main content */
     max-width: 794px; /* A4 width */
     max-height: 1123px; /* A4 height */
     margin: auto; /* Center the main content */

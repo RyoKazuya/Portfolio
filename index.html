@@ -5,38 +5,37 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container"> <!-- New wrapper for sidebar and main -->
-        <div class="sidebar">
-            <h2>Leonardo Wiriananda</h2>
-            <h3>Data Analyst</h3>
-            <img src="path/to/your-image.jpg" alt="Portrait of Leonardo Wiriananda" class="profile-pic">
-            <div class="sidebarmain">
-                <p>Short bio about yourself.</p>
-                <h3>Contact</h3>
-                <p>Email: <a href="mailto:wirianandal@gmail.com">wirianandal@gmail.com</a></p>
-                <p>Phone: -</p>
+    <body>
+        <div class="container"> <!-- This wrapper will hold both sidebar and main -->
+            <div class="sidebar">
+                <h2>Leonardo Wiriananda</h2>
+                <h3>Data Analyst</h3>
+                <img src="path/to/your-image.jpg" alt="Portrait of Leonardo Wiriananda" class="profile-pic">
+                <div class="sidebarmain">
+                    <p>Short bio about yourself.</p>
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:wirianandal@gmail.com">wirianandal@gmail.com</a></p>
+                    <p>Phone: -</p>
+                </div>
+            </div>
+
+            <div class="main">
+                <header class="header">
+                    <h1>Welcome to My Portfolio</h1>
+                </header>
+                <nav class="navbar">
+                    <a href="#" onclick="loadContent('Profile.html')">Profile</a>
+                    <a href="#" onclick="loadContent('Education.html')">Education</a>
+                    <a href="#" onclick="loadContent('Skills.html')">Skills</a>
+                    <a href="#" onclick="loadContent('Project.html')">Project Experience</a>
+                </nav>
+                <main class="content">
+                    <div id="content">
+                        <p>Select a section from the navigation menu to learn more about me.</p>
+                    </div>
+                </main>
             </div>
         </div>
-
-        <div class="main">
-            <header class="header">
-                <h1>Welcome to My Portfolio</h1>
-            </header>
-            <nav class="navbar">
-                <a href="#" onclick="loadContent('Profile.html')">Profile</a>
-                <a href="#" onclick="loadContent('Education.html')">Education</a>
-                <a href="#" onclick="loadContent('Skills.html')">Skills</a>
-                <a href="#" onclick="loadContent('Project.html')">Project Experience</a>
-            </nav>
-            <main class="container">
-                <div id="content">
-                    <p>Select a section from the navigation menu to learn more about me.</p>
-                </div>
-            </main>
-        </div>
-    </div>
-    <script src="Script.js"></script>
-</body>
-
+        <script src="Script.js"></script>
+    </body>
 </html>

@@ -11,14 +11,13 @@ html, body {
 body {
     display: flex; /* Flexbox for layout */
     justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
 }
 
 .container {
     display: flex; /* Flex container for sidebar and main */
     width: 100%; /* Full width of the body */
     max-width: 1200px; /* Optional: limit max width */
-    margin: 20px; /* Optional: spacing from the edges */
+    height: 100vh; /* Full height for the container */
 }
 
 .sidebar {
@@ -26,7 +25,7 @@ body {
     background-color: #343a40; /* Dark background for sidebar */
     color: #ffffff; /* White text for sidebar */
     padding: 20px;
-    min-height: calc(100vh - 40px); /* Adjust height as necessary */
+    height: auto; /* Adjust height as necessary */
 }
 
 .profile-pic {
@@ -44,11 +43,9 @@ body {
     background-image: url('images/background.png'); /* Background image */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
-    max-width: 210mm; /* A4 width */
-    max-height: 297mm; /* A4 height */
-    margin: 0; /* Remove margin for proper alignment */
     border: 1px solid #ddd; /* Optional border */
     border-radius: 8px; /* Optional rounded corners */
+    overflow: auto; /* Allow scrolling if content is too tall */
 }
 
 .header {
@@ -71,7 +68,7 @@ body {
     color: #0056b3; /* Darker color on hover */
 }
 
-.container {
+.content {
     flex: 1; /* Allow the content to take the available space */
     padding: 20px;
     background-color: #f8f9fa; /* Light background for content area */

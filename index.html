@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,25 +23,17 @@
             <h1>Main Header</h1>
         </div>
         <div class="navbar">
-            <a href="#Profile">Profile</a>
-            <a href="#Education">Education</a>
-            <a href="#skill">Skill</a>
-            <a href="#Project">Project Experience</a>
+            <a href="#" onclick="loadContent('Profile.html')">Profile</a>
+            <a href="#" onclick="loadContent('Education.html')">Education</a>
+            <a href="#" onclick="loadContent('Skill.html')">Skill</a>
+            <a href="#" onclick="loadContent('Project.html')">Project Experience</a>
         </div>
         <div class="container">
-            <main class="main-content">
-                <h1>Welcome to My Portfolio</h1>
-                <section>
-                    <h2>Projects</h2>
-                    <p>Description of your projects or work.</p>
-                </section>
-                <section>
-                    <h2>Skills</h2>
-                    <p>List of your skills.</p>
-                </section>
-            </main>
+            <div id="content">
+            </div>
         </div>
     </div>
+    <script src="Script.js"></script>
 </body>
-
+    
 </html>

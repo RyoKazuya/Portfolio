@@ -1,29 +1,43 @@
 body {
     display: flex;
-    margin: 10px;
+    margin: 0;
     font-family: Arial, sans-serif;
 }
+
 .sidebar {
-    width: 300px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    width: 250px; /* Adjust the width as needed */
+    background-color: #f4f4f4; /* Sidebar background color */
+    padding: 20px; /* Padding inside the sidebar */
 }
+
 .main {
-    flex: 1;
-    padding: 20px;
+    flex-grow: 1; /* Allow the main content to fill the available space */
+    padding: 20px; /* Padding around the main content */
 }
-.header, .navbar {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px;
-    margin: 0 -20px 20px -20px;
+
+.header {
+    background-color: #333; /* Header background color */
+    color: white; /* Header text color */
+    padding: 10px; /* Padding inside the header */
+    text-align: center; /* Center the header text */
 }
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center navbar items */
+    background-color: #444; /* Navbar background color */
+}
+
 .navbar a {
-    color: white;
-    margin-right: 15px;
-    text-decoration: none;
+    color: white; /* Navbar link color */
+    padding: 14px 20px; /* Padding for links */
+    text-decoration: none; /* Remove underline from links */
 }
+
 .navbar a:hover {
-    text-decoration: underline;
+    background-color: #555; /* Change background on hover */
+}
+
+.main-content {
+    margin-top: 20px; /* Space between navbar and main content */
 }

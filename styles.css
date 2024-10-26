@@ -10,6 +10,15 @@ html, body {
 
 body {
     display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.container {
+    display: flex; /* Flex container for sidebar and main */
+    width: 100%; /* Full width of the body */
+    max-width: 1200px; /* Optional: limit max width */
+    margin: 20px; /* Optional: spacing from the edges */
 }
 
 .sidebar {
@@ -17,7 +26,14 @@ body {
     background-color: #343a40; /* Dark background for sidebar */
     color: #ffffff; /* White text for sidebar */
     padding: 20px;
-    min-height: 100vh; /* Make sidebar full height of the viewport */
+    min-height: calc(100vh - 40px); /* Adjust height as necessary */
+}
+
+.profile-pic {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px;
 }
 
 .main {
